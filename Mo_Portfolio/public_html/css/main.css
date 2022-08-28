@@ -1,0 +1,683 @@
+/*own css*/
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+body {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 5rem;
+}
+
+a {
+  color:black;
+  font-weight: normal;
+  text-decoration: none !important;
+  transition: all 0.5s ease;
+}
+a:hover{
+  color: black;
+}
+.tag span:hover{
+  color:black;
+}
+h1 span:hover{
+  color:black;
+}
+h1{
+  color: black;
+}
+
+.flex_center{
+  justify-content: center;
+}
+
+.img_flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-fluid{
+  border-radius: 2rem;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+.about-image{
+  max-width: 75%;
+}
+.about-text b{
+  color: #FFCC33;
+}
+.about-title{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-title span{
+  color: #5B7444;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text-center{
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+.tag{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.text-center span{
+  padding:0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(225, 225, 225);
+  border: 0.15rem solid rgba(182, 182, 182, 0.25);
+  border-radius: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  word-wrap: normal;
+}
+/*368px/16=23rem*/
+@media (max-width: 23rem) {
+  .tag{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 47.5rem) {
+ .about-image{
+  max-width: 100%;
+ }
+ .card_tag{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+ }
+}
+@media (min-width: 62rem) {
+  .card_tag{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+   }
+}
+
+.project_card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 0.45rem solid rgba(182, 182, 182, 0.25);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.project_card:hover{
+  border: 0.45rem solid #C8DFB7;
+}
+.project_card h3{
+  color: black;
+  font-weight: 500;
+}
+.project_link{
+  text-decoration: none;
+  color: black;
+}
+span:hover{
+  color:white;
+}
+.card_img{
+  width: 100%;
+  height: 100%;
+}
+.card_bottom{
+  display: flex;
+  flex:1 1 auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  min-height: 16rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card_title{
+  margin-bottom:0.5rem;
+}
+.card_tag{
+  display: flex;
+}
+.card_tag span{
+  padding:0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgb(225, 225, 225);
+  border: 0.15rem solid rgba(182, 182, 182, 0.25);
+  border-radius: 1rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  word-wrap: normal;
+}
+
+.bg{
+  background-image: url("../img/profile/bg.png");/*Mo(2022), created using Figma*/
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size:70%;
+  background-size: cover;
+  padding-bottom: 0.5rem;
+}
+
+.bg_white{
+  border: 0.25rem dotted rgba(182, 182, 182, 0.25);
+  background-color: white;
+  padding: 1rem;
+}
+.footer{
+  background-color: white;
+  border-top: 0.25rem dotted rgba(182, 182, 182, 0.25);
+}
+.project_body{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.project span{
+  font-weight: 400;
+}
+.body_wrapper{
+  white-space: pre-line;
+  padding-left: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  text-align: left;
+}
+.body_img{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.body_img img{
+  max-width: 30rem;
+}
+.body_img p{
+  max-width: 30rem;
+  color: #b7b7b7;
+}
+@media (max-width: 30rem) {
+  .body_img img{
+    max-width: 18rem;
+    min-width: 10rem;
+  }
+  .body_img p{
+    max-width: 18rem;
+  }
+}
+
+
+.navList{
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+  position: sticky; /*sticky reference: https://developer.mozilla.org/en-US/docs/Web/CSS/position*/
+  top:5rem /*because my top navbar is fixed so gave some room*/
+}
+
+.list-item{
+  display: inline-block;
+  background-color: #E4EFDB;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  color: #686C71;
+  margin-top: 0.5rem;
+}
+.list-item:hover{
+  color: white;
+  transition: all 0.4s ease;
+  background: #FFCC33;
+}
+
+
+
+nav a:hover {
+  color: #ffffff ;
+}
+
+.navbar-logo .icon {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5b5b5b;
+}
+
+h1 {
+  color: #212121;
+  font-size: 3rem;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
+  color: #353535;
+  font-size: 2.5em;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: bold;
+}
+
+h3 {
+  color: #484848;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+b, strong {
+  font-weight: bold;
+}
+.custom-btn-group{
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.custom-btn {
+  border: 0.15rem solid #C8DFB7;
+  border-radius: 0.25rem;
+  color: #5B7444;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 0.25rem;
+}
+
+.custom-btn:hover {
+  border: 0.15rem solid #FFCC33;
+  background: #FFCC33;
+  color: white;
+}
+.project-btn {
+  border: 0.15rem solid #A3C586;
+  border-radius: 0.25rem;
+  color: #5B7444;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-left: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.project-btn:hover {
+  border: 0.15rem solid #FFCC33;
+  background: #FFCC33;
+  color: white;
+}
+
+
+.btn_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 14rem;
+}
+.material-icons{
+  margin-right: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.animated {
+  position: relative;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 20rem;
+  position: relative;
+  font-size: 3rem;
+}
+
+.animated-item {
+  color: #C8DFB7;
+}
+
+.animated-item {
+  font-size: 2.5rem;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: LeftToRight 9s linear infinite 0s;
+}
+.animated-item:nth-child(2n+2) {
+  animation-delay: 3s;
+}
+.animated-item:nth-child(3n+3) {
+  animation-delay: 6s;
+}
+/* understand the animation property reference: https://www.w3schools.com/cssref/css3_pr_animation.asp*/
+@keyframes LeftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateX(0.4rem);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(0.4rem);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.navbar {
+  background-color: #C8DFB7;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+
+.box_shadow {
+  box-shadow: 0.1rem 0.25rem 0.5rem #404040;/*https://www.w3schools.com/cssref/tryit.asp?*/
+}
+
+.navbar-logo {
+  font-weight: bold;
+}
+.naver-logo:hover{
+  color: black;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding: 0.175rem 1.75rem;
+}
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+.nav-link span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.nav-link span:before {
+  position: absolute;
+  top: -100%;
+  content: attr(data-hover);
+  transform: translate3d(0,0,0);
+  text-decoration: underline 0.2rem;
+  text-underline-offset: 0.15rem;
+}
+/*understand the transform reference: https://www.w3schools.com/cssref/css3_pr_transform.asp
+so I changed the navbar hover animation*/
+
+.nav-link:focus span,
+.nav-link:hover span {
+  transform: translateY(100%);
+}
+
+
+.navbar-toggle {
+  line-height: 2rem;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.6rem;
+  border: 0;
+  padding: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
+.copyright-text {
+  font-size: 1.2rem;
+  font-weight: normal;
+  display: block;
+}
+
+.social-links{
+  background-color: #C8DFB7;
+  border-radius: 5rem;
+  border: 0.35rem solid #C8DFB7;
+  
+}
+.social-links:hover{
+  background-color: #474559;
+  border: 0.35rem solid #474559;
+}
+
+@media (max-width: 62rem) {
+
+  .about-image {
+    margin-top: 5em;
+    max-width: 30rem;
+    height: auto;
+  }
+
+  .mobile-mt-2,
+  .contact-form {
+    margin-top: 2em;
+  }
+
+  .contact-info {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  body{
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 2.25rem;
+    font-style: bold;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .animated-item {
+    font-size: 1.75rem;
+  }
+  .text-center{
+    margin-top: 5rem;
+  }
+/*this is for the mobile...*/
+  .navbar {
+    background-color: #C8DFB7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .container{
+    gap: 0.5rem;
+  }
+ 
+  .navbar-collapse {
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding: 0.19rem 1.25rem;
+  }
+
+  .navbar-nav{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+@media (max-width: 36.25rem) {
+	.animated-info {
+		min-width: 12.5rem;
+	}
+  .animated-item {
+    font-size: 1.875rem;
+  }
+
+  .custom-btn-group {
+    text-align: center;
+  }
+  .text-center{
+    margin-top: 7rem;
+  }
+
+  .custom-btn-group{
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .timeline-info small {
+    display: block;
+    margin: 0.625rem 0 0 0;
+  }
+
+
+}
+@media(max-width:20rem){
+  .navbar-nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .text-center{
+    margin-top: 12rem;
+  }
+
+}
+
+@media (max-width: 48rem) {
+  .animated-info{
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .animated-text {
+    margin-top: 0;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+  .about-p{
+    margin-top: 4rem;
+  }
+  .about-title{
+    flex-direction: column;
+  }
+ 
+}
+@media (max-width: 20rem) {
+  .animated-text {
+    margin-top: 0;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+  .about-p{
+    margin-top: 4rem;
+  }
+  .about-title{
+    flex-direction: column;
+  }
+ 
+
+  .full-screen {
+    padding: 4rem 0;
+  }
+
+  .mobile-block {
+    display: block;
+  }
+
+}
+
+.row{
+  justify-content: center;
+}
+
+#topBtn{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 2rem; /* Place the button at the bottom of the page */
+  right: 2.5rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #C8DFB7; /* Set a background color */
+  color: #474559; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.75rem; /* Some padding */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 2rem; /* Rounded corners */
+  font-size: 0.75rem; /* Increase font size */
+}
+
+#topBtn:hover{
+  background-color: #889288;
+  color: white;
+}
