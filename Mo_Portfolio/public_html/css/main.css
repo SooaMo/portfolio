@@ -126,7 +126,7 @@ h1{
   margin-bottom: 1.5rem;
 }
 .project_card:hover{
-  border: 0.45rem solid #C8DFB7;
+  border: 0.45rem solid #f5cb5c;
 }
 .project_card h3{
   color: black;
@@ -309,9 +309,9 @@ b, strong {
 }
 
 .custom-btn {
-  border: 0.15rem solid #C8DFB7;
+  border: 0.15rem solid #f5cb5c;
   border-radius: 0.25rem;
-  color: #5B7444;
+  color: black;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -366,7 +366,7 @@ b, strong {
 }
 
 .animated-item {
-  color: #C8DFB7;
+  color: #f5cb5c;
 }
 
 .animated-item {
@@ -416,7 +416,7 @@ b, strong {
   }
 }
 .navbar {
-  background-color: #C8DFB7;
+  background-color: #cfdbd5;
   position: fixed;
   top: 0;
   right: 0;
@@ -490,9 +490,9 @@ so I changed the navbar hover animation*/
 }
 
 .social-links{
-  background-color: #C8DFB7;
+  background-color: #f5cb5c;
   border-radius: 5rem;
-  border: 0.35rem solid #C8DFB7;
+  border: 0.35rem solid #f5cb5c;
   
 }
 .social-links:hover{
@@ -539,7 +539,7 @@ so I changed the navbar hover animation*/
   }
 /*this is for the mobile...*/
   .navbar {
-    background-color: #C8DFB7;
+    background-color: #f5cb5c;
     position: fixed;
     top: 0;
     right: 0;
@@ -667,7 +667,7 @@ so I changed the navbar hover animation*/
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #C8DFB7; /* Set a background color */
+  background-color: #f5cb5c; /* Set a background color */
   color: #474559; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 0.75rem; /* Some padding */
