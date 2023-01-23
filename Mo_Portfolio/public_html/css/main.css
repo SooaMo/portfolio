@@ -148,7 +148,7 @@ span:hover{
   flex:1 1 auto;
   padding: 1rem;
   background-color: #ffffff;
-  min-height: 16rem;
+  min-height: 19rem;
   flex-direction: column;
   justify-content: space-around;
 }
