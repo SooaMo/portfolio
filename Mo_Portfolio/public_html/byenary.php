@@ -1,40 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+<?php
+//add the header
+require('header.php');
 
-    <title>Sooa_Mo</title>
-
-    <!--this css from the https://www.tooplate.com/templates/2115_marvel/-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- icon reference: https://www.w3schools.com/icons/google_icons_intro.asp-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    <!-- adobe font, FuturaPT reference: https://fonts.adobe.com/fonts/futura-pt#fonts-section-->
-    <link rel="stylesheet" href="https://use.typekit.net/jlc5xxh.css">
-
-    <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/main.css">
-    
-  </head>
-  <body>
-
-   <!-- NAVBAR -->
-   <div id="navbar" class="navbar box_shadow navbar-expand-sm ">
-        <div class="container">
-            <a class="navbar-logo" href="index.html" > Sooa Mo</a>
-
-            <div class="navbar-collapse" id="navbarNav">
-                <nav class="navbar-nav ml-lg-auto">      
-                    <a href="index.html#about" class="nav-link"  title="link to home page about section"><span data-hover="About">About</span></a>
-                    <a href="index.html#project" class="nav-link" title="link to home page project section"><span data-hover="Projects">Projects</span></a>                  
-                    <a href="https://drive.google.com/file/d/1L8O37sk1M0H18cAbqRmRBeCzpnl-HW3h/view?usp=sharing" target="_blank" class="nav-item nav-link" title="new tab for Sooa Mo's resume" ><span data-hover="Resume">Resume</span></a>
-                </nav>
-            </div>
-        </div>
-    </div>
+?>
 
     <!-- PROJECT - byenary -->
        <!--for the icon preview checked this website https://iconscout.com/unicons/explore/line-->
@@ -203,23 +171,7 @@
         </div>
     </section>
 
- <!-- FOOTER -->
- <footer class=" footer py-5">
-    <div class="container">
-         <div class="row">
-              <div class="col-lg-12 col-12">                                
-                  <p class="copyright-text text-center">Copyright &copy; 2022 Sooa Mo. All rights reserved.</p>
-              </div>
-         </div>
-    </div>
-</footer>
-  
-<!--top button reference:https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
-
-<button type="button" onclick="topFunction()" id="topBtn" title="Go to top" class="box_shadow">Top <i class="material-icons" style="font-size:0.5rem">arrow_upward</i> </button>
-
-<!--hide menu on scroll from here: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp-->
-<script src="js/scroll.js"></script>
-
-</body>
-</html>
+<!-- Addd the footer -->
+<?php
+require('footer.php');
+?>
