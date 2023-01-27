@@ -126,7 +126,7 @@ h1{
   margin-bottom: 1.5rem;
 }
 .project_card:hover{
-  border: 0.45rem solid #f5cb5c;
+  border: 0.45rem solid #889288;
 }
 .project_card h3{
   color: black;
@@ -256,7 +256,7 @@ span:hover{
 .list-item:hover{
   color: white;
   transition: all 0.4s ease;
-  background: #FFCC33;
+  background: #889288;
 }
 
 
@@ -309,7 +309,7 @@ b, strong {
 }
 
 .custom-btn {
-  border: 0.15rem solid #f5cb5c;
+  border: 0.15rem solid #A3C586;
   border-radius: 0.25rem;
   color: black;
   font-weight: bold;
@@ -319,8 +319,8 @@ b, strong {
 }
 
 .custom-btn:hover {
-  border: 0.15rem solid #FFCC33;
-  background: #FFCC33;
+  border: 0.15rem solid #889288;
+  background: #889288;
   color: white;
 }
 .project-btn {
@@ -335,8 +335,8 @@ b, strong {
   padding-right: 0.5rem;
 }
 .project-btn:hover {
-  border: 0.15rem solid #FFCC33;
-  background: #FFCC33;
+  border: 0.15rem solid #889288;
+  background: #889288;
   color: white;
 }
 
