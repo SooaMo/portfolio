@@ -734,3 +734,87 @@ so I changed the navbar hover animation*/
   background-color: #889288;
   color: white;
 }
+
+/* New portfolio modal */
+.legacy-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.legacy-modal-content {
+  background: #fff;
+  width: 60%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Close button (top right) */
+.legacy-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+.legacy-close-btn:hover {
+  color: #000;
+}
+
+/* Button inside the modal */
+
+.legacy-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #fff;              
+  color: #000;                         
+  border: 2px solid #658D7F;           
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.legacy-btn:hover {
+  background-color: #658D7F;           
+  color: #fff;                         
+}
+
+
+/* Fixed CTA button at the bottom */
+
+.fixed-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;            
+  color: #000;                      
+  border: 2px solid #658D7F;         
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fixed-cta:hover {
+  background-color: #658D7F;        
+  color: #fff;                      
+}
